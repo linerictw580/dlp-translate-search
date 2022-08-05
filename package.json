@@ -1,10 +1,10 @@
 {
   "name": "node-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "bin/index.js",
   "bin": {
-    "tran": "./bin/index.js"
+    "trans": "./bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

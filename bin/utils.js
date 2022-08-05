@@ -1,5 +1,5 @@
 module.exports = { showHelp: showHelp };
-const usage = '\n使用方式： tran <專案路徑> <程式名稱>';
+const usage = '\n使用方式： trans <專案路徑> <程式名稱>';
 function showHelp() {
   console.log(usage);
   console.log('\nOptions:\r');

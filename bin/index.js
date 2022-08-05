@@ -58,7 +58,7 @@ function searchPatternInFiles(files) {
       const lineMatches = line.match(/('|`)([^('|`)]*)[\u4E00-\u9FFF]+([^('|`)]*)('|`)/g);
       if (lineMatches) {
         // console.log(lineMatches);
-        fileMatches = [...fileMatches, ...lineMatches];
+        fileMatches = [...fileMatches, ...lineMatches.map((match) => match.replace(/('|`)/g, ''))];
       }
     });
 
