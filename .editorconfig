@@ -1,0 +1,25 @@
+# https://editorconfig.org
+# if root=true is not specified, EditorConfig will continue to look for an .editorconfig file outside of the project.
+root = true
+
+# global
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf # on save
+insert_final_newline = true # on save
+trim_trailing_whitespace = true # on save
+
+# Minified JavaScript files shouldn't be changed
+[**.min.js]
+indent_style = false
+insert_final_newline = false
+
+# The JSON files contain newlines inconsistently
+[*.json]
+insert_final_newline = false
+
+[*.md]
+insert_final_newline = false
+trim_trailing_whitespace = false
