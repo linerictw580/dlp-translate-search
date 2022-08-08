@@ -55,7 +55,7 @@ function searchPatternInFiles(files) {
     let fileMatches = [];
     const lines = data.toString().split('\n');
     lines.forEach((line) => {
-      const lineMatches = line.match(/('|`)([^('|`)]*)[\u4E00-\u9FFF]+([^('|`)]*)('|`)/g);
+      const lineMatches = line.match(/('|`)([^'`]*)[\u4E00-\u9FFF]+([^'`]*)('|`)/g);
       if (lineMatches) {
         // console.log(lineMatches);
         fileMatches = [...fileMatches, ...lineMatches.map((match) => match.replace(/('|`)/g, ''))];
